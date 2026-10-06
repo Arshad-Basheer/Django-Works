@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <input type="number" name="w" placeholder="Enter weight in kg"><br>
+    <input type="number" name="h" placeholder="Enter height in cm"><br>
+    <input type="submit">
+</form>
+<p>BMI : {{bmi}}</p>
+</body>
+</html>
